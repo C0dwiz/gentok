@@ -26,7 +26,7 @@
 
 <p>To install the library, use pip. Navigate to the root directory of your project and run the following command:</p>
 
-<pre><code>pip install .</code></pre>
+<pre><code>pip install https://github.com/C0dwiz/gentok/archive/dev.zip --force-reinstall</code></pre>
 
 <h2>Usage</h2>
 
@@ -45,7 +45,7 @@ print("Generated Token:", token)
 
 <p>To verify a token, use the <code>check_token</code> function. This function checks if the provided token matches the token stored in the file <code>&lt;name&gt;.pkib</code>.</p>
 
-<pre><code>from gentok import check_token
+<pre><code class="language-python">from gentok import check_token
 
 # Verify the token
 is_valid = check_token("test", token)
@@ -54,7 +54,7 @@ print("Access granted." if is_valid else "Access denied.")
 
 <h3>Full Usage Example</h3>
 
-<pre><code>from gentok import generate_token, check_token
+<pre><code class="language-python">from gentok import generate_token, check_token
 
 # Generate a new token and save it to the file "test.pkib"
 token = generate_token("test")
